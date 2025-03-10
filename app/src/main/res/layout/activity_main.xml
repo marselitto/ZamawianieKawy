@@ -12,12 +12,116 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Zamów kawę"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:background="@color/brown"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <RadioButton
+            android:id="@+id/espresso"
+            android:text="Espresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:id="@+id/cappuccino"
+            android:text="Cappuccino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:id="@+id/latte"
+            android:text="Latte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wybierz dodatki:"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cukier"
+        android:text="Cukier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/mleko"
+        android:text="Mleko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_margin="10dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ile kaw chcesz zamówić: "
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+
+        />
+
+
+    <SeekBar
+        android:id="@+id/ilosc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="30"
+        android:padding="10dp"
+        android:progress="1"
+        />
+
+
+    <Button
+        android:id="@+id/przycisk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zamów"
+        android:layout_margin="20dp"
+
+        />
 
 </LinearLayout>
