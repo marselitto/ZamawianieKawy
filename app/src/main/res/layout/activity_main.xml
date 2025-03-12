@@ -7,7 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#E4CCBB">
 
     <TextView
         android:layout_width="match_parent"
@@ -40,7 +41,7 @@
             <RadioButton
                 android:id="@+id/espresso"
                 android:text="Espresso"
-                android:buttonTint="@color/brown"
+                android:buttonTint="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -63,10 +64,9 @@
             android:id="@+id/zdjecie"
             android:layout_width="170dp"
             android:layout_height="170dp"
-            android:src="@drawable/wwwww" />
+            />
 
     </LinearLayout>
-
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
@@ -88,19 +88,22 @@
         android:textStyle="bold"
         android:textSize="15dp"/>
 
-    <CheckBox
-        android:id="@+id/cukier"
-        android:text="Cukier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"/>
+        <CheckBox
+            android:id="@+id/cukier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:buttonTint="@color/brown"
+            android:text="Cukier" />
 
-    <CheckBox
-        android:id="@+id/mleko"
-        android:text="Mleko"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"/>
+            <CheckBox
+            android:id="@+id/mleko"
+            android:text="Mleko"
+                android:buttonTint="@color/brown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
     </LinearLayout>
 
     <View
@@ -109,13 +112,18 @@
         android:background="@color/brown2"
         android:layout_margin="5dp"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
     <TextView
         android:id="@+id/ilosckaw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ile kaw chcesz zamówić: 1"
         android:padding="10dp"
-        android:layout_marginLeft="10dp"
         android:textStyle="bold"
         android:textSize="15dp"/>
 
@@ -124,7 +132,6 @@
         android:id="@+id/ilosc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
         android:max="30"
         android:min="1"
         android:padding="10dp"
@@ -138,9 +145,10 @@
         android:id="@+id/przycisk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Zamów"
-        android:layout_marginLeft="15dp"
         android:backgroundTint="@color/brown2"
+        android:text="Zamów"
+        android:onClick="buttonclick"
         />
+    </LinearLayout>
 
 </LinearLayout>
