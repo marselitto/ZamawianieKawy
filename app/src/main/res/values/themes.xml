@@ -6,4 +6,5 @@
     </style>
 
     <style name="Theme.Zamawianie_kawy" parent="Base.Theme.Zamawianie_kawy" />
+
 </resources>

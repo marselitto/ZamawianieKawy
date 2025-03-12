@@ -15,7 +15,7 @@
         android:text="Zamów kawę"
         android:gravity="center"
         android:textSize="30sp"
-        android:padding="20dp"
+        android:padding="15dp"
         android:background="@color/brown"
         android:textColor="@color/white"
         android:textStyle="bold"/>
@@ -34,42 +34,51 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp"
-            android:layout_marginRight="50dp"
+            android:layout_marginRight="20dp"
             >
-
 
             <RadioButton
                 android:id="@+id/espresso"
                 android:text="Espresso"
+                android:buttonTint="@color/brown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <RadioButton
-                android:id="@+id/cappuccino"
-                android:text="Cappuccino"
+                android:id="@+id/capuccino"
+                android:text="Capuccino"
+                android:buttonTint="@color/brown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <RadioButton
                 android:id="@+id/latte"
                 android:text="Latte"
+                android:buttonTint="@color/brown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </RadioGroup>
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/capuccino" />
+            android:id="@+id/zdjecie"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/wwwww" />
 
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/black"
-        android:layout_margin="10dp"/>
+        android:background="@color/brown2"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
 
     <TextView
         android:layout_width="match_parent"
@@ -84,43 +93,53 @@
         android:text="Cukier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginLeft="20dp"/>
 
     <CheckBox
         android:id="@+id/mleko"
         android:text="Mleko"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginLeft="20dp"/>
+    </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/black"
-        android:layout_margin="10dp"/>
+        android:background="@color/brown2"
+        android:layout_margin="5dp"/>
 
     <TextView
+        android:id="@+id/ilosckaw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ile kaw chcesz zamówić: "
+        android:text="Ile kaw chcesz zamówić: 1"
         android:padding="10dp"
+        android:layout_marginLeft="10dp"
         android:textStyle="bold"
         android:textSize="15dp"/>
+
 
     <SeekBar
         android:id="@+id/ilosc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:max="30"
+        android:min="1"
         android:padding="10dp"
-        android:progress="1"/>
+        android:progress="1"
+        android:progressBackgroundTint="#754515"
+        android:progressTint="#5D3925"
+        android:thumbTint="@color/brown"
+        />
 
     <Button
         android:id="@+id/przycisk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Zamów"
-        android:layout_margin="20dp"
+        android:layout_marginLeft="15dp"
         android:backgroundTint="@color/brown2"
         />
 
